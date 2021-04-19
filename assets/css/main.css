@@ -225,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
+  position: relative;
 }
 
 #hero:before {
@@ -416,7 +417,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -451,6 +452,15 @@ section {
   height: 10px;
   transition: .9s;
   background-color: #149ddd;
+}
+
+.skills .container2 {
+  margin-left: 107px;
+  margin-top: 5px;
+  padding-left: 12px;
+  padding-top: 12px;
+  box-sizing: border-box;
+  display: block;
 }
 
 /*--------------------------------------------------------------
@@ -599,6 +609,36 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
   border-left: 1px solid #37b3ed;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p, .portfolio .portfolio-wrap .portfolio-info ul {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
 }
 
 .portfolio .portfolio-wrap:hover::before {
